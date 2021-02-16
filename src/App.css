@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+body{
+  background: #EFF3F4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Nav! */
+.underNav{
+  background: #F0F4F7;
+}
+.underNav ul li{
+  display: inline-block;
+  background: white;
+}
+.underNav a{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+}
+.underNav ul li .active{
+  color: #FF6F4A;
+}
+nav{
+  background: #233043;
+}
+.navbar-brand{
+  background: #FF6F4A;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.underNavButton:hover{
+  cursor: pointer;
+}
+.input{
+  background: #2F3D54;
+  border: none;
+  padding: 7px 20px;
+  width: 50%;
+}
+.input:focus{
+  outline: none;
+}
+.formButton{
+  border: none;
+}
+.searchIcon{
+  margin-left: -50px;
+}
+.notifIcons a{
+  text-decoration: none;
+  font-size: 20px;
+}
+.badge{
+  background: red;
+  font-size: 9px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.navbar { padding: 0 }
+
+/* Image container */
+.imageBgContainer{
+  height: 410px;
+  width: 100%;
+  background-image: url("./cover-page.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: -15px;
+}
+
+/* ===== MAIN_POST ===== */
+
+/* Main Post Component */
+.PostPage{
+  margin-top: -90px;
+}
+.PostPage img{
+  width: 100%;
+  height: auto;
+}
+
+/* Name and time posted */
+.nameAndTime .name{
+   font-weight: 700;
+   font-size: 12px;
+}
+.timePosted{
+  font-size: 11px;
+}
+
+
+
+
+/* ===== SIDE_BAR ===== */
+
+/* Icons Side Bar */
+.icons i{
+  font-size: 20px;
+ 
+  border-radius: 50%;
+  height: 20px;
+  width: auto;
+}
+.icons i:hover{
+  cursor: pointer;  
+}
+.postIconDiv{  
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.icons .active, span .active{
+  background: #FF6F4A;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Your Interest Row */
+.interestList li{
+  list-style: none;
+  text-align: left;
+}
+.interestList li span{
+  color: #FF6F4A;
+}
+.yourInterest{
+  display: flex;
+  justify-content: space-around;
+}
+.yourInterest span{
+  font-size: 14px;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* ===== ADS ===== */
+
+/* Ads */
+.imgContainer img{
+  width: 100%;
+  height: auto;
 }
